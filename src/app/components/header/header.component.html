@@ -1,7 +1,7 @@
 <header class="header">
     <ul class="header_content">
         @for (item of headerItens; track $index) {
-            <li class="header_content_item">{{ item }}</li>
+            <li class="header_content_item"><a [routerLink]="item.url">{{ item.txt }}</a></li>
         }
     </ul>
 </header>
