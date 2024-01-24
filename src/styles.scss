@@ -1,3 +1,11 @@
+:root {
+    --text: #444;
+    --background: #ffffff;
+    --primary: #4685ff;
+    --secondary: #f2f2f2;
+    --accent: #ffb084;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,4 +19,13 @@ html {
 
 body {
     font-size: 1.6rem;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
 }

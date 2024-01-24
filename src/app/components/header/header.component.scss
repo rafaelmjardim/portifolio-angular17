@@ -3,5 +3,9 @@
         display: flex;
         align-items: center;
         gap: 2rem;
+
+        &_item {
+          color: var(--text);
+        }
     }
 }
