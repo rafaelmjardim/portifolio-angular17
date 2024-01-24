@@ -1,7 +1,10 @@
 <header class="header">
-    <ul class="header_content">
+    <!-- Futuramente logo -->
+    <span class="header_title">Logo</span>
+
+    <ul class="header_menu">
         @for (item of headerItens; track $index) {
-            <li class="header_content_item"><a [routerLink]="item.url">{{ item.txt }}</a></li>
+            <li class="header_menu_item"><a [routerLink]="item.url">{{ item.txt }}</a></li>
         }
     </ul>
 </header>

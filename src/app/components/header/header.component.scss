@@ -1,12 +1,18 @@
 .header {
-    &_content {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-        &_item {
-          color: var(--text);
-          font-size: 2rem;
-        }
-    }
+  width: 100%;
+  height: 16rem;
+  padding: 0 20rem;
+  // background-color: var(--primary);
+  
+  color: var(--text);
+  font-size: 2rem;
+
+  &_menu {
+    display: flex;
+    gap: 4rem;
+  }
 }
