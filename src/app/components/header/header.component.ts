@@ -29,7 +29,7 @@ export class HeaderComponent implements OnInit{
         url: 'habilidades'
       },
       {
-        txt: 'projetos',
+        txt: 'Projetos',
         url: 'projetos'
       },
       {
