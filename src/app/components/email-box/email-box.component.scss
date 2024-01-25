@@ -1,0 +1,14 @@
+.email_box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: .1rem solid #444;
+
+    // height: 4rem;
+    padding: 2rem;
+
+    &_icon {
+        border-right: .1rem solid #444;
+        padding-right: 2rem;
+    }
+}
