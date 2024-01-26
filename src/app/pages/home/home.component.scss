@@ -1,17 +1,31 @@
 .home {
     height: calc(100vh - 16rem);
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
+    padding: 0 10rem;
     
     &_content {
         display: flex;
-        align-items: end;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
         
-        &_intro {
-            color: var(--text);
-            font-size: 10rem;
-            max-width: 120rem;
+        &_group {
+
+            &_title {
+                color: var(--text);
+                font-size: 6.4rem;
+
+                &_span {
+                    color: var(--primary);
+                }
+            }
+
+            &_subtitle {
+                font-size: 2.4rem;
+                color: var(--text);
+            }
         }
     }
 }

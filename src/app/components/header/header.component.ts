@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Header } from './header';
-import { text } from 'stream/consumers';
 import { NgOptimizedImage } from '@angular/common';
+import { NgIcon, provideIcons } from '@ng-icons/core';
+import { ionRocketOutline } from "@ng-icons/ionicons";
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, NgOptimizedImage],
+  imports: [RouterLink, NgOptimizedImage, NgIcon],
+  providers: [provideIcons({ionRocketOutline})],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
