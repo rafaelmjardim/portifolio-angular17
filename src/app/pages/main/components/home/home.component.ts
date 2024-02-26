@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../../components/header/header.component';
-import { EmailBoxComponent } from '../../components/email-box/email-box.component';
+import { HeaderComponent } from '../../../../components/header/header.component';
+import { EmailBoxComponent } from '../../../../components/email-box/email-box.component';
 
 @Component({
   selector: 'app-home',
