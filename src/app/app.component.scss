@@ -1,4 +1,8 @@
 .app {
     height: 100vh;
     background-color: var(--background);
+    background-image: url('/assets/background-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -24rem;
 }

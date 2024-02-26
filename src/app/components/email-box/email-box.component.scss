@@ -10,8 +10,11 @@
     width: 27.5rem;
     transition: 1s;
 
+    color: var(--text-secundary);
+    background-color: #2222224f;
+
     &:hover {
-        background-color: var(--primary);
+        background-color: #bb553c;
     }
 
     &_icon {

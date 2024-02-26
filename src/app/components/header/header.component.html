@@ -1,10 +1,12 @@
 <header class="header">
-    <!-- <img ngSrc="assets/Logo.png" width="80" height="80"/> -->
-    <ng-icon name="ionRocketOutline" size="5rem" color="var(--primary)"></ng-icon>
+    <img ngSrc="assets/Logo.png" width="80" height="80"/>
+    <!-- <ng-icon name="ionRocketOutline" size="5rem" color="var(--primary)"></ng-icon> -->
 
     <ul class="header_menu">
         @for (item of headerItens; track $index) {
-            <li class="header_menu_item"><a [routerLink]="item.url">{{ item.txt }}</a></li>
+            <li class="header_menu_item">
+                <a class="header_menu_item_link" [routerLink]="item.url">{{ item.txt }}
+            </a></li>
         }
     </ul>
 </header>
