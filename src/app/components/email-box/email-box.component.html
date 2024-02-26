@@ -1,13 +1,12 @@
-<div class="email_box">
+<div class="email_box" (mouseover)="copyTxtEnable = true" (mouseleave)="copyTxtEnable = false">
     <span class="email_box_icon">
         <ng-icon name="ionMailOutline"></ng-icon>
     </span>
 
-    <span class="email_box_txt">
-        rafaelmjardim&#64;gmail.com
-    </span>
 
-    <div class="email_box_copy hover">
-        Clique para copiar!
+    <div class="email_box_txt">
+        <span class="email_box_txt_email" [ngClass]="{'disabled': copyTxtEnable}">rafaelmjardim&#64;gmail.com</span>
+        <span class="email_box_txt_copy" [ngClass]="{'disabled': !copyTxtEnable}">Clique para copiar</span>
     </div>
+   
 </div>

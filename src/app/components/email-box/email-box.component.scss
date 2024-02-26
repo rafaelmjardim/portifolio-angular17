@@ -4,20 +4,14 @@
     gap: 1rem;
     border: .1rem solid #444;
     cursor: pointer;
-    // background-color: blue;
-
-    // height: 4rem;
     padding: 2rem;
-
     position: relative;
 
-    &:hover {
-        .email_box_copy {
-            &.hover {
-                display: flex;
+    width: 27.5rem;
+    transition: 1s;
 
-            }
-        }
+    &:hover {
+        background-color: var(--primary);
     }
 
     &_icon {
@@ -25,21 +19,20 @@
         padding-right: 2rem;
     }
 
-    &_copy {
-        &.hover {
+    &_txt {
+        position: relative;
+        height: 2rem;
+        width: 100%;
+        
+        &_copy, &_email {
             position: absolute;
-            right: 0;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            background-color: rgba(33, 87, 158, 0.80);
-            transition: 1s;
-
-            display: none;
+            position: absolute;
+            opacity: 1;
+            transition: .4s;
+                                  
+            &.disabled {
+                opacity: 0;
+            }
         }
     }
 }
