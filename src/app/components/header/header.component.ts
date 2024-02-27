@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Header } from './header';
-import { NgClass, NgOptimizedImage } from '@angular/common';
+import { NgClass, NgOptimizedImage, NgStyle } from '@angular/common';
 import { IconType, NgIcon, provideIcons } from '@ng-icons/core';
 import { ionRocketOutline, ionHomeOutline, ionBulbOutline, ionTerminalOutline, ionCallOutline, ionArrowDownOutline} from "@ng-icons/ionicons";
 
@@ -12,7 +12,8 @@ import { ionRocketOutline, ionHomeOutline, ionBulbOutline, ionTerminalOutline, i
     RouterLink, 
     NgOptimizedImage, 
     NgIcon,
-    NgClass    
+    NgClass,
+    NgStyle
   ],
   providers: [provideIcons({ionRocketOutline, ionHomeOutline, ionBulbOutline, ionTerminalOutline, ionCallOutline, ionArrowDownOutline})],
   templateUrl: './header.component.html',
@@ -20,9 +21,21 @@ import { ionRocketOutline, ionHomeOutline, ionBulbOutline, ionTerminalOutline, i
 })
 export class HeaderComponent implements OnInit{
   headerItens: Header[] = [];
-  iconTeste: IconType = ionHomeOutline
-
+  
+  scrolled: boolean = false;
+  
   ngOnInit(): void {
+    this.setMenuItens();
+  }
+  
+  //Função que verifica scroll para aplicar stylo no header flutuante
+  @HostListener('window:scroll', ['$event'])
+  onScroll = (event: Event) => {
+    this.scrolled = window.scrollY > 100;    
+  }
+  
+  setMenuItens = () => {
+
     this.headerItens = [
       {
         txt: 'Início',
