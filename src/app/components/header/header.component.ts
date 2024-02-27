@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Header } from './header';
-import { NgOptimizedImage } from '@angular/common';
+import { NgClass, NgOptimizedImage } from '@angular/common';
 import { IconType, NgIcon, provideIcons } from '@ng-icons/core';
-import { ionRocketOutline, ionHomeOutline, ionBulbOutline, ionTerminalOutline, ionCallOutline} from "@ng-icons/ionicons";
+import { ionRocketOutline, ionHomeOutline, ionBulbOutline, ionTerminalOutline, ionCallOutline, ionArrowDownOutline} from "@ng-icons/ionicons";
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, NgOptimizedImage, NgIcon],
-  providers: [provideIcons({ionRocketOutline, ionHomeOutline, ionBulbOutline, ionTerminalOutline, ionCallOutline})],
+  imports: [
+    RouterLink, 
+    NgOptimizedImage, 
+    NgIcon,
+    NgClass    
+  ],
+  providers: [provideIcons({ionRocketOutline, ionHomeOutline, ionBulbOutline, ionTerminalOutline, ionCallOutline, ionArrowDownOutline})],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -39,6 +44,13 @@ export class HeaderComponent implements OnInit{
         txt: 'Contato',
         url: 'Contato',
       },
+      {
+        txt: 'Currículo',
+        url: 'curriculo',
+        pdf: 'assets/curriculo_rafael_jardim.pdf',
+        icon: 'ionArrowDownOutline',
+        isButton: true
+      }
     ];
   }
 }

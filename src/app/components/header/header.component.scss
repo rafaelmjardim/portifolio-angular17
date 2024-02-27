@@ -10,6 +10,7 @@
 
   &_menu {
     display: flex;
+    align-items: center;
     gap: 4rem;
 
     &_item {      
@@ -18,6 +19,20 @@
 
         &:hover {
           color: var(--primary);
+        }
+
+        &.download-button {
+          color: var(--primary);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: .8rem;
+          background-color: #A0A0A012;
+          width: 14rem;
+          height: 4.5rem;
+          border-radius: 1rem;
+          border: .1rem solid var(--primary);
+          font-size: 2rem;
         }
       }
     }
