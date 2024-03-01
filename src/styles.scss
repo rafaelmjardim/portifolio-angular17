@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 :root {
-    --text: #ffffff;
+    --text: #f4f4f4;
     --text-secundary: #DDDDDD;
     --background: #212529;
     --primary: #FF5A13;
+    --text-orange: #F38C21;
     --secondary: #f2f2f2;
     --accent: #ffb084;
+
+    --font-secundary: "Nunito", sans-serif;
 }
 
 * {

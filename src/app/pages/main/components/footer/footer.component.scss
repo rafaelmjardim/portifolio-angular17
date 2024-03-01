@@ -1,3 +1,40 @@
 .footer {
     height: 100vh;
+    
+    &_content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 9rem;
+
+        &_txt {
+            max-width: 36rem;
+            text-align: center;
+            font-size: 2rem;
+            color: var(--text-secundary);
+            
+            span {
+                color: var(--text-orange);
+            }
+        }
+
+        &_social {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            &_icon {
+                border: .1rem solid var(--text-orange);
+                border-radius: 4rem;
+                width: 5rem;
+                height: 5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+        }
+    }
 }

@@ -17,7 +17,10 @@
 
             &_txt {
                 margin-top: 2rem;
-                font-size: 2rem;
+                font-size: 1.5rem;
+                font-family: var(--font-secundary);
+                line-height: 2.4rem;
+                color: var(--text-secundary);
             }
         }
     }
