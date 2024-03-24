@@ -8,11 +8,11 @@
   color: var(--text);
   font-size: 2.4rem;
   transition: .5s;
+  position: fixed;
 
   &.scrolled {
-    position: fixed;
     background-color: #44444460;
-    height: 10rem;
+    height: 8.5rem;
   }
 
   &_menu {
