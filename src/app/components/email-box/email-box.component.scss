@@ -7,7 +7,7 @@
     padding: 2rem;
     position: relative;
 
-    width: 27.5rem;
+    width: 29.5rem;
     transition: 1s;
 
     color: var(--text-secundary);
@@ -37,6 +37,20 @@
             &.disabled {
                 opacity: 0;
             }
+        }
+    }
+
+    &_copy {
+        position: absolute;
+        top: -1rem;
+        right: 30%;
+        // left: 50%;
+        transform: rotate(-5deg);
+        opacity: 0;
+        transition: .4s;
+
+        &.clicked {
+            opacity: 1;
         }
     }
 }
