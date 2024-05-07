@@ -3,10 +3,12 @@
         <div class="footer_card_container">
             <span class="footer_card_container_title">Iniciar um projeto</span>
             <p class="footer_card_container_txt">Interessado em meu trabalho? Devíamos arranjar uma hora para conversar. Vou preparar o café.</p>
-            <button class="footer_card_container_button">
-                <img src="assets/icons/thumbs_up.svg" alt="Icon thumbs_up">
-                Vamos fazer isso
-            </button>
+            <a href="https://api.whatsapp.com/send?phone=5551998747124&text=Ol%C3%A1%2C%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20meu%20web%20site!" target="_blank">
+                <button class="footer_card_container_button">
+                    <img src="assets/icons/thumbs_up.svg" alt="Icon thumbs_up">
+                    Vamos fazer isso
+                </button>
+            </a>
         </div>
     </div>
 
@@ -18,7 +20,9 @@
         <ul class="footer_content_social">
             @for (icon of socialIconList; track $index) {
                 <li class="footer_content_social_icon">
-                    <ng-icon [name]="icon.value" [color]="icon.color" size="2.2rem"></ng-icon>
+                    <a [href]="icon.url" target="_blank">
+                        <ng-icon [name]="icon.value" [color]="icon.color" size="2.2rem"></ng-icon>
+                    </a>
                 </li>
             }
         </ul>
