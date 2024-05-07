@@ -1,1 +1,12 @@
-<p>projects works!</p>
+<div class="projects">
+    <h2 class="projects_title">Projetos</h2>
+    <!-- <p class="projects_subtitle">Alguns de meus porojetos...</p> -->
+
+    <ul class="projects_list">
+        @for (project of projectsList; track $index) {
+            <li class="projects_list_card">
+                {{project.name}}
+            </li>
+        }
+    </ul>
+</div>

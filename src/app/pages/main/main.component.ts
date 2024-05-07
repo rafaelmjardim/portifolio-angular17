@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @Component({
   selector: 'app-main',
@@ -9,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     HomeComponent,
     AboutComponent,
+    ProjectsComponent,
     FooterComponent
   ],
   templateUrl: './main.component.html',
