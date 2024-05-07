@@ -42,15 +42,15 @@
 
     &_copy {
         position: absolute;
-        top: -1rem;
+        top: 1rem;
         right: 30%;
-        // left: 50%;
         transform: rotate(-5deg);
         opacity: 0;
         transition: .4s;
 
         &.clicked {
             opacity: 1;
+            top: -1rem;
         }
     }
 }

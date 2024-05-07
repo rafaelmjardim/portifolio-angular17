@@ -26,9 +26,10 @@ export class EmailBoxComponent {
   emailTxt = 'rafaelmjardim@gmail.com'
 
   handleCopy = () => {
-    this.copyClicked = !this.copyClicked;    
-
+    this.copyClicked = true;    
     
-    
+    setTimeout(() => {
+      this.copyClicked = false;    
+    }, 1500)
   }
 }
