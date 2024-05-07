@@ -29,7 +29,7 @@ export class HeaderComponent implements OnInit{
   }
   
   //Função que verifica scroll para aplicar stylo no header flutuante
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll', ['$event']) //adicionar [ngClass]="{'scrolled': scrolled}" na div principal para ativar
   onScroll = (event: Event) => {
     this.scrolled = window.scrollY > 100;    
   }
