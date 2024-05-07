@@ -2,7 +2,7 @@ import { IconType } from "@ng-icons/core"
 
 export type Header = {
     txt: string
-    url: string
+    href: string
     icon?: string
     pdf?: string
     isButton?: boolean

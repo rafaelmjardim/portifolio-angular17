@@ -39,28 +39,28 @@ export class HeaderComponent implements OnInit{
     this.headerItens = [
       {
         txt: 'Início',
-        url: 'home',
+        href: '#',
       },
       {
         txt: 'Sobre',
-        url: 'sobre',
+        href: '#about',
       },
       {
         txt: 'Habilidades',
-        url: 'habilidades',
+        href: '#skills',
       },
       {
         txt: 'Projetos',
-        url: 'projetos',
+        href: '#projects',
       },
       {
         txt: 'Contato',
-        url: 'Contato',
+        href: '#footer',
       },
       {
         txt: 'Currículo',
-        url: 'curriculo',
-        pdf: 'assets/curriculo_rafael_jardim.pdf',
+        href: 'assets/curriculo_rafael_jardim.pdf',
+        // pdf: 'assets/curriculo_rafael_jardim.pdf',
         icon: 'ionArrowDownOutline',
         isButton: true
       }

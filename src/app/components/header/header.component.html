@@ -5,7 +5,7 @@
     <ul class="header_menu">
         @for (item of headerItens; track $index) {
             <li class="header_menu_item">
-                <a class="header_menu_item_link" [ngClass]="{'download-button': item.isButton}" [href]="item.pdf" [target]="item.pdf ? '_blank' : '' ">
+                <a class="header_menu_item_link" [ngClass]="{'download-button': item.isButton}" [href]="item.href" [target]="item.pdf ? '_blank' : '' ">
                     @if (item.icon) {
                         <ng-icon [name]="item.icon"></ng-icon>
                     }
