@@ -45,6 +45,7 @@
                 }
 
                 &:hover {
+                    scale: 1.1;
                     border: .1rem solid var(--primary-hover);
 
                     ng-icon {
