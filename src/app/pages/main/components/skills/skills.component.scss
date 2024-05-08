@@ -1,0 +1,43 @@
+.skills {
+    height: 100vh;
+    padding: 0 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-secundary);
+
+    &_left {
+        &_title {
+            font-size: 6rem;
+            max-width: 45rem;
+        }
+
+        &_subtitle {
+            font-family: var(--font-secundary);
+            color: var(--text-secundary);
+        }
+    }
+
+    &_right {
+        &_list {
+            max-width: 46rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            &_card {
+                width: 10rem;
+                height: 10.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #464a52;
+                border-radius: .5rem;
+
+                ng-icon {
+                    color: #1c2027;
+                }
+            }
+        }
+    }
+}
