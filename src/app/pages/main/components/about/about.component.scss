@@ -8,6 +8,22 @@
         align-items: center;
         justify-content: space-between;
 
+        &_perfil {
+            width: 40rem;
+            height: 40rem;
+            border-radius: 50rem;
+            overflow: hidden;
+
+            &_img {
+                transition: 1s ease;
+    
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+        }
+
+
         &_content {
             max-width: 57rem;
 
