@@ -15,6 +15,7 @@
         &_subtitle {
             font-family: var(--font-secundary);
             color: var(--text-secundary);
+            margin-top: 2rem;
         }
     }
 
@@ -31,11 +32,24 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: #464a52;
+                background-color: #212529;
                 border-radius: .5rem;
+                border: .1rem solid #555;
+                transition: all .8s ease 0s, 
+                opacity 1s cubic-bezier(0.5, 0, 0, 1) 0s, 
+                transform 1s cubic-bezier(0.5, 0, 0, 1) 0s;
 
                 ng-icon {
-                    color: #1c2027;
+                    color: #6b707a;
+                    transition: all .8s ease 0s, 
+                }
+
+                &:hover {
+                    border: .1rem solid var(--primary-hover);
+
+                    ng-icon {
+                        color: #f35f1f;
+                    }
                 }
             }
         }
