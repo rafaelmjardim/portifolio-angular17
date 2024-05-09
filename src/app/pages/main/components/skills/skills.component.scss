@@ -6,6 +6,11 @@
     justify-content: space-between;
     background-color: var(--background-secundary);
 
+    @media screen and (max-width: 500px) {
+        flex-wrap: wrap;
+    }
+
+
     &_left {
         &_title {
             font-size: 6rem;

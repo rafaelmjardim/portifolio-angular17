@@ -16,4 +16,6 @@ export class HomeComponent {
     path: '/assets/lottie/pc_animation.json',
   }
 
+  window!: Window;
+
 }
