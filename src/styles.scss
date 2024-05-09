@@ -4,6 +4,7 @@
     --text: #f4f4f4;
     --text-secundary: #DDDDDD;
     --background: #212529;
+    --bg: #1b1e20;
     --background-secundary: #1C1F22;
     --primary: #FF5A13;
     --primary-hover: #cf4f18;
@@ -48,7 +49,8 @@ html {
 body {
     font-size: 1.6rem;
     color: var(--text);
-    background-color: var(--background);
+    background-color: var(--bg);
+    // background-color: #020a13;
 }
 
 a {
