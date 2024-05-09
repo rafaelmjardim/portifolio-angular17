@@ -13,11 +13,7 @@ import { AnimationItem } from 'ngx-lottie/lib/symbols';
 })
 export class HomeComponent {
   options: AnimationOptions = {
-    path: '/assets/lottie/animation.json',
+    path: '/assets/lottie/pc_animation.json',
   }
 
-  animationCreated = (animationItem: AnimationItem): void => {
-    console.log(animationItem);
-    
-  }
 }

@@ -5,16 +5,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     // background-color: var(--background-secundary);
-    background: linear-gradient(112.1deg, #1C1F22 30.4%, rgb(119, 74, 63) 90.2%);
-    // @media screen and (min-width: 1800px) {
-    //     background-position: 0 -24rem;
-    // }
+    // background: linear-gradient(112.1deg, #1C1F22 30.4%, rgb(119, 74, 63) 90.2%);
+    background: radial-gradient(circle at -8.9% 51.2%, #FF5A13 0%, rgb(20, 20, 20) 15.9%, rgb(34, 34, 34) 15.9%, rgb(25, 25, 25) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+    
 
     &_main {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 10rem;
+        padding: 0 16rem;
         height: 100%;
 
         &_content {
@@ -48,6 +47,11 @@
             position: absolute;
             bottom: -.5rem;
             right: 10rem;
+            transition: 1s ease;
+
+            &:hover {
+                scale: 1.1;
+            }
         }
     }
 }
