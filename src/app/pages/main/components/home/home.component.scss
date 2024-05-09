@@ -9,9 +9,12 @@
         padding: 0 10rem;
         height: 100%;
 
+        
+
         @media screen and (max-width: 500px) {
             flex-wrap: wrap;
             height: calc(100% - 14rem);
+            padding: 0 1.5rem;
         }
 
         &_content {
