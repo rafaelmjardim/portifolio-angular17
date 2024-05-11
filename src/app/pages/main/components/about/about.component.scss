@@ -1,11 +1,9 @@
 .about {
     height: 100vh;
-    padding: 0 10rem;
 
     @media screen and (max-width: 500px) {
         padding: 0 1.5rem;
     }
-    
     
     &_container {
         height: 100%;
