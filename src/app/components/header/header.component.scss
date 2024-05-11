@@ -23,9 +23,13 @@
   &_menu {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
 
     @media screen and (max-width: 500px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 860px) {
       display: none;
     }
 
@@ -56,6 +60,14 @@
             box-shadow: #ff5a132a 0px 4px 10px;
           }
         }
+      }
+    }
+
+    &_mobile {
+      display: none;
+
+      @media screen and (max-width: 860px) {
+        display: block;
       }
     }
   }

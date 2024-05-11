@@ -4,6 +4,7 @@ import { Header } from './header';
 import { NgClass, NgOptimizedImage, NgStyle } from '@angular/common';
 import { IconType, NgIcon, provideIcons } from '@ng-icons/core';
 import { ionRocketOutline, ionHomeOutline, ionBulbOutline, ionTerminalOutline, ionCallOutline, ionArrowDownOutline} from "@ng-icons/ionicons";
+import { MenuMobileComponent } from '../menu-mobile/menu-mobile.component';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +14,8 @@ import { ionRocketOutline, ionHomeOutline, ionBulbOutline, ionTerminalOutline, i
     NgOptimizedImage, 
     NgIcon,
     NgClass,
-    NgStyle
+    NgStyle,
+    MenuMobileComponent
   ],
   providers: [provideIcons({ionRocketOutline, ionHomeOutline, ionBulbOutline, ionTerminalOutline, ionCallOutline, ionArrowDownOutline})],
   templateUrl: './header.component.html',
