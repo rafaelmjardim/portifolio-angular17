@@ -65,4 +65,12 @@ ul, li {
 // Classes globais
 .padding {
     padding: 0 8rem;
+
+    @media (max-width: 750px) {
+        padding: 0 4rem;
+    }
+   
+    @media (max-width: 500px) {
+        padding: 0 1.4rem;
+    }
 }
