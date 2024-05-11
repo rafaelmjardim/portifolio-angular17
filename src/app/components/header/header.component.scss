@@ -33,6 +33,9 @@
     &_item {      
       &_link {
         transition: .2s;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
 
         &:hover {
           color: var(--primary);

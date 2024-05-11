@@ -1,9 +1,9 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { Header } from './header';
+import { Header, MENU_LIST } from './header';
 import { NgClass, NgOptimizedImage, NgStyle } from '@angular/common';
 import { IconType, NgIcon, provideIcons } from '@ng-icons/core';
-import { ionRocketOutline, ionHomeOutline, ionBulbOutline, ionTerminalOutline, ionCallOutline, ionArrowDownOutline} from "@ng-icons/ionicons";
+import { ionRocketOutline, ionHomeOutline, ionBulbOutline, ionTerminalOutline, ionCallOutline, ionArrowDownOutline, ionPersonOutline, ionExtensionPuzzleOutline, ionCodeWorking, ionCodeWorkingOutline, ionPhonePortraitOutline} from "@ng-icons/ionicons";
 import { MenuMobileComponent } from '../menu-mobile/menu-mobile.component';
 
 @Component({
@@ -17,17 +17,29 @@ import { MenuMobileComponent } from '../menu-mobile/menu-mobile.component';
     NgStyle,
     MenuMobileComponent
   ],
-  providers: [provideIcons({ionRocketOutline, ionHomeOutline, ionBulbOutline, ionTerminalOutline, ionCallOutline, ionArrowDownOutline})],
+  providers: [
+    provideIcons({
+      ionRocketOutline, 
+      ionHomeOutline, 
+      ionBulbOutline, 
+      ionTerminalOutline, 
+      ionCallOutline, 
+      ionArrowDownOutline,
+      ionPersonOutline,
+      ionExtensionPuzzleOutline,
+      ionCodeWorkingOutline,
+      ionPhonePortraitOutline
+    })],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent implements OnInit{
-  headerItens: Header[] = [];
+  headerItens: Header[] = MENU_LIST;
   
   scrolled: boolean = false;
   
   ngOnInit(): void {
-    this.setMenuItens();
+
   }
   
   //Função que verifica scroll para aplicar stylo no header flutuante
@@ -36,36 +48,5 @@ export class HeaderComponent implements OnInit{
     this.scrolled = window.scrollY > 100;    
   }
   
-  setMenuItens = () => {
-
-    this.headerItens = [
-      {
-        txt: 'Início',
-        href: '#',
-      },
-      {
-        txt: 'Sobre',
-        href: '#about',
-      },
-      {
-        txt: 'Habilidades',
-        href: '#skills',
-      },
-      {
-        txt: 'Projetos',
-        href: '#projects',
-      },
-      {
-        txt: 'Contato',
-        href: '#footer',
-      },
-      {
-        txt: 'Currículo',
-        href: 'assets/curriculo_rafael_jardim.pdf',
-        // pdf: 'assets/curriculo_rafael_jardim.pdf',
-        icon: 'ionArrowDownOutline',
-        isButton: true
-      }
-    ];
-  }
+  
 }
