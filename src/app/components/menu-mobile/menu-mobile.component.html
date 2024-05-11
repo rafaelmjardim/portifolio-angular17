@@ -1,3 +1,27 @@
 <div class="menu_mobile">
-    <ng-icon name="ionMenuOutline" size="3.6rem"></ng-icon>
+
+    @if (!showMenu) {
+        <div class="menu_mobile_open">
+            <ng-icon name="ionMenuOutline" size="3.6rem" (click)="handleHideMenu()"></ng-icon>
+        </div>
+    }
+
+
+    <div class="menu_mobile_content" [ngClass]="{'hide': showMenu}">
+            @if (showMenu) {
+                <div class="menu_mobile_content_close">
+                    <ng-icon name="ionCloseOutline" size="3.6rem" (click)="handleHideMenu()"></ng-icon>
+                </div>
+            }
+            
+            <ul class="menu_mobile_content_list">
+
+                @for (menu of menuList; track $index) {
+                    <a [href]="menu.href" (click)="handleHideMenu()">
+                        <li class="menu_mobile_content_list_item" [ngClass]="{'hide': showMenu}">{{menu.txt}}</li>
+                    </a>
+                }
+
+            </ul>
+        </div>
 </div>

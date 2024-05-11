@@ -1,6 +1,52 @@
 .menu_mobile {
-    ng-icon {
-        cursor: pointer;
-        color: var(--txt-secundary);
+    transition: 4s;
+    
+    &_content, &_open {
+        ng-icon {
+            cursor: pointer;
+            color: var(--txt-secundary);
+        }
+    }
+
+    &_content {
+        width: 0;
+        height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: rgba(20, 20, 20, 0.85);
+        backdrop-filter: blur(10px);
+        z-index: 10;
+        transition: .4s ease;
+        overflow: hidden;
+
+        &.hide {
+            width: 80%;
+        }
+
+        &_close {
+            position: absolute;
+            top: 1.2rem;
+            left: 1.2rem;
+        }
+
+        &_list {
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3.5rem;
+            padding: 4rem;
+            
+            &_item {
+                font-size: 3rem;
+                opacity: 0;
+                transition: 1s ease;
+                
+                &.hide {
+                    opacity: 1;
+                }
+
+            }
+        }
     }
 }
