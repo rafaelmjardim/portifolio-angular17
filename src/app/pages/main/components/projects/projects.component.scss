@@ -7,6 +7,12 @@
     align-items: center;
     gap: 2rem;
 
+    @media (max-width: 500px) {
+        height: 100%;
+        margin: 6rem 0;
+        gap: 0;
+    }
+
     &_title {
         font-size: 6rem;
 
