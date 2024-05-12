@@ -1,16 +1,27 @@
 <div id="skills" class="skills padding">
-    <div class="skills_left">
-        <h2 class="skills_left_title">Minhas habilidades e tecnologias</h2>
-        <p class="skills_left_subtitle">Passe o mouse sobre os cards (Adicionar icon mouse) </p>
-    </div>
+    <h2 class="skills_title">Minhas habilidades e tecnologias</h2>
 
-    <div class="skills_right">
-        <ul class="skills_right_list">
-            @for (card of cardSkillsList; track $index) {
-                <li class="skills_right_list_card">
-                    <ng-icon [name]="card.icon" size="5.5rem"></ng-icon>
-                </li>
+    <div class="skills_group">
+        <div class="skills_group_left">
+            @if (currentInfo) {
+                <p class="skills_group_left_subtitle">{{currentInfo}}</p>
+            } @else {
+                <p class="skills_group_left_subtitle" style="color: #777">*Passe o mouse sobre os cards.</p>
+                <ng-lottie 
+                    [options]="options"
+                    width="23rem"
+                ></ng-lottie>
             }
-        </ul>
+        </div>
+
+        <div class="skills_group_right">
+            <ul class="skills_group_right_list">
+                @for (card of cardSkillsList; track $index) {
+                    <li class="skills_group_right_list_card" (mouseenter)="changeSkillsInfo(card.txt)" (mouseleave)="cleanSkillInfo()">
+                        <ng-icon [name]="card.icon" size="5.5rem"></ng-icon>
+                    </li>
+                }
+            </ul>
+        </div>
     </div>
 </div>
