@@ -12,11 +12,7 @@ export class ProjectsComponent {
 
   projectsList: Project[] = [
     {
-      imgUrl: 'assets/projects/travel2.png',
-      name: 'Em desenvolvimento...'
-    },
-    {
-      imgUrl: 'assets/projects/login.png',
+      imgUrl: 'assets/projects/mr3.png',
       name: 'Em desenvolvimento...'
     },
     {
@@ -24,11 +20,15 @@ export class ProjectsComponent {
       name: 'Em desenvolvimento...'
     },
     {
-      imgUrl: 'assets/projects/login.png',
+      imgUrl: 'assets/projects/cafe.png',
       name: 'Em desenvolvimento...'
     },
     {
-      imgUrl: 'assets/projects/travel2.png',
+      imgUrl: 'assets/projects/payments.png',
+      name: 'Em desenvolvimento...'
+    },
+    {
+      imgUrl: 'assets/projects/travel.png',
       name: 'Em desenvolvimento...'
     },
     {
