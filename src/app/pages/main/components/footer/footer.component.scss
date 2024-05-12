@@ -74,6 +74,11 @@
         justify-content: center;
         gap: 9rem;
 
+        img {
+            width: auto;
+            height: 6rem;
+        }
+
         &_txt {
             max-width: 36rem;
             text-align: center;
