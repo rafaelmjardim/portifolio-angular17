@@ -40,7 +40,7 @@
         }
 
         &_card {
-            width: 35rem;
+            width: 33rem;
             height: 18rem;
             border-radius: 1rem;
             
@@ -52,6 +52,36 @@
             font-family: var(--font-secundary);
             color: #ccc;
             font-size: 1.6rem;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            border: .2rem solid #555;
+            
+            &::after {
+                background: linear-gradient(180deg, rgba(14, 19, 30, 0) 0%, rgba(14, 19, 30, 0.6) 96.35%);
+                content: '';
+                // background-color: red;
+                z-index: 10;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+            }
+
+            img {
+                object-fit: cover;
+                position: absolute;
+                transition: 1s ease;
+
+                // opacity: 0;
+            }
+
+            &:hover {                
+                
+                img {
+                    opacity: .1;
+                    scale: 1.1;
+                }
+            }
             
             @media (max-width: 500px) {
                 
