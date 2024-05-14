@@ -93,22 +93,23 @@
         &_social {
             display: flex;
             align-items: center;
-            gap: 2rem;
+            gap: 2.5rem;
 
             &_icon {
                 border: .1rem solid var(--text-orange);
                 border-radius: 4rem;
-                width: 5rem;
-                height: 5rem;
+                width: 5.5rem;
+                height: 5.5rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
-                transition: .2s;
+                transition: .4s;
 
                 &:hover {
-                    background-color: #0c0c0c62;
-                    scale: 1.1;
+                    // background-color: #0c0c0c62;
+                    scale: 1.15;
+                    opacity: .6;
                     box-shadow: rgba(0, 0, 0, 0.164) 0px 4px 6px -1px, rgba(0, 0, 0, 0.164) 0px 2px 4px -1px;
                 }
             }
