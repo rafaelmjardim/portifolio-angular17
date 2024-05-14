@@ -92,8 +92,15 @@
 
         &_social {
             display: flex;
+            justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
             gap: 2.5rem;
+
+            @media (width < 400px) {
+                max-width: 26rem;
+                gap: 1.5rem;
+            }
 
             &_icon {
                 border: .1rem solid var(--text-orange);
