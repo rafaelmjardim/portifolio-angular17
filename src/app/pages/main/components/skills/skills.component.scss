@@ -6,12 +6,18 @@
     justify-content: center;
     gap: 10rem;
     background-color: var(--background-secundary);
+    
+    @media (width < 800px) {
+        height: 100%;
+        gap: 2rem;
+        padding: 6rem 0;
+    }
 
     @media (max-width: 500px) {
         flex-wrap: wrap;
         flex-direction: column;
-        gap: 2rem;
         justify-content: center;
+        gap: 2rem;
     }
 
     &_title {
@@ -29,11 +35,25 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 30rem;
+        gap: 4rem;
+        
+        @media (width < 800px) {
+            flex-wrap: wrap;
+        }
+
+        @media (width > 1300px) {
+            gap: 30rem;
+        }
 
         &_left {   
             width: 50rem;
             height: 23rem;
+
+            @media (width < 800px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 
             &_subtitle {
                 font-family: var(--font-secundary);
@@ -66,7 +86,12 @@
                     transition: all .8s ease 0s, 
                     opacity 1s cubic-bezier(0.5, 0, 0, 1) 0s, 
                     transform 1s cubic-bezier(0.5, 0, 0, 1) 0s;
-    
+
+                    @media (width < 1172px) {
+                        width: 8rem;
+                        height: 8.5rem;
+                    }
+                       
                     ng-icon {
                         color: #6b707a;
                         transition: all .8s ease 0s, 
