@@ -34,11 +34,14 @@
             @media (width < 1200px) {
                 width: 24rem;
                 height: 24rem;
+                margin-right: 3rem;
             }
 
             @media (max-width: 500px) {
                 width: 20rem;
                 height: 20rem;
+                margin-right: 0;
+
 
                 img {
                     width: 20rem;
@@ -59,10 +62,6 @@
 
         &_content {
             max-width: 57rem;
-
-            @media (width < 1200px) {
-                margin-left: 3rem;
-            }
 
             &_title {
                 font-size: 6rem;
