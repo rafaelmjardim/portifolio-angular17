@@ -4,7 +4,7 @@
 
     <ul class="projects_list">
         @for (project of projectsList; track $index) {
-            <li class="projects_list_card">
+            <li class="projects_list_card" (click)="handleOpenDialog(project)">
                 <img [src]="project.imgUrl" [alt]="'Imagem projeto' + project.name ">
                 <span>{{project.name}}</span>
             </li>

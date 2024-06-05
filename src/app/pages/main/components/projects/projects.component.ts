@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Project } from './projects';
+import { MatDialog } from "@angular/material/dialog";
+import { ProjectDialogComponent } from './project-dialog/project-dialog.component';
 
 @Component({
   selector: 'app-projects',
@@ -53,5 +55,10 @@ export class ProjectsComponent {
     // },
   ];
 
+  constructor (private dialog: MatDialog){}
+
+  handleOpenDialog = (project: Project) => {
+    this.dialog.open(ProjectDialogComponent);
+  }
 
 }
