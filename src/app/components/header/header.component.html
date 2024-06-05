@@ -7,7 +7,7 @@
             <li class="header_menu_item">
                 <a class="header_menu_item_link" [ngClass]="{'download-button': item.isButton}" [href]="item.href" [target]="item.pdf ? '_blank' : '' ">
                     @if (item.icon) {
-                        <ng-icon [name]="item.icon" size="2rem"></ng-icon>
+                        <ng-icon [name]="item.icon"></ng-icon>
                     }
                     <span class="header_menu_item_link_txt">{{ item.txt }}</span>
                 </a>
