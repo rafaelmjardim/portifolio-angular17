@@ -113,6 +113,12 @@
                 cursor: pointer;
                 transition: .4s;
 
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
                 &:hover {
                     // background-color: #0c0c0c62;
                     scale: 1.15;
