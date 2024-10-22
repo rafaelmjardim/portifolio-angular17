@@ -58,7 +58,8 @@ export class ProjectsComponent {
   constructor (private dialog: MatDialog){}
 
   handleOpenDialog = (project: Project) => {
-    this.dialog.open(ProjectDialogComponent);
+    // this.dialog.open(ProjectDialogComponent);
+    return
   }
 
 }
