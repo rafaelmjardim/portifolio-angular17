@@ -1,4 +1,7 @@
 export type Project = {
-    imgUrl: string
+    url_img: string
     name: string
+    details: string
+    technologies: string
+    link: string
 }

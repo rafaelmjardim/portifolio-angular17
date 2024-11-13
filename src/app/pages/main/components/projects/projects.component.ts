@@ -14,45 +14,27 @@ export class ProjectsComponent {
 
   projectsList: Project[] = [
     {
-      imgUrl: 'assets/projects/mr3.png',
-      name: 'Em desenvolvimento...'
+      url_img: 'assets/background-img.jpg',
+      name: 'Nome do projeto',
+      details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+      link: '',
+      technologies: 'HTML, CSS'
     },
     {
-      imgUrl: 'assets/projects/travel2.png',
-      name: 'Em desenvolvimento...'
+      url_img: 'assets/background-img.jpg',
+      name: 'Nome do projeto',
+      details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+      link: '',
+      technologies: 'HTML, CSS'
     },
     {
-      imgUrl: 'assets/projects/cafe.png',
-      name: 'Em desenvolvimento...'
+      url_img: 'assets/background-img.jpg',
+      name: 'Nome do projeto',
+      details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+      link: '',
+      technologies: 'HTML, CSS'
     },
-    {
-      imgUrl: 'assets/projects/payments.png',
-      name: 'Em desenvolvimento...'
-    },
-    {
-      imgUrl: 'assets/projects/travel.png',
-      name: 'Em desenvolvimento...'
-    },
-    {
-      imgUrl: 'assets/projects/login.png',
-      name: 'Em desenvolvimento...'
-    },
-    // {
-    //   imgUrl: '',
-    //   name: 'Projeto 3'
-    // },
-    // {
-    //   imgUrl: '',
-    //   name: 'Projeto 4'
-    // },
-    // {
-    //   imgUrl: '',
-    //   name: 'Projeto 5'
-    // },
-    // {
-    //   imgUrl: '',
-    //   name: 'Projeto 6'
-    // },
+    
   ];
 
   constructor (private dialog: MatDialog){}
