@@ -22,21 +22,21 @@ export class ProjectsComponent {
     {
       url_img: 'assets/projects/cardapio-online.png',
       name: 'Cardapio Online',
-      details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+      details: 'Sistema completo de pedidos para restaurantes, desenvolvido como parte do meu TCC. Utiliza Angular para a interface dinâmica e integração com o Firebase via API REST, garantindo eficiência e escalabilidade.',
       link: 'https://cardapio-online-project.vercel.app/',
       technologies: 'Angular, Typescript, SASS e Firebase'
     },
     {
       url_img: 'assets/projects/travel.png',
       name: 'Travel Landingpage',
-      details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+      details: 'Landing page completa e de alta performance, com design elegante, responsivo e intuitivo. Oferecendo uma experiência do usuário fluida e otimizada para todos os dispositivos.',
       link: 'https://travel-website-v17-project.vercel.app/',
       technologies: 'Angular com SSR, HTML e SASS'
     },
     {
       url_img: 'assets/projects/todo.png',
       name: 'Todo List',
-      details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+      details: 'Todo List desenvolvido para armazenar dados diretamente da localstorge, permitindo inserir novo item, editar, deletar e marcar como concluído.',
       link: 'https://todo-list-portfolio-project.vercel.app/todo',
       technologies: 'Angular, Typescript, HTML, SASS'
     },
