@@ -38,7 +38,7 @@
     &__card {
         background-color: var(--background-secundary);
         padding: 2.4rem;
-        border-radius: 2rem;
+        border-radius: 1.2rem;
     }
 
     &__content {
@@ -48,15 +48,26 @@
         width: 32rem;
     }
 
-    img {
-        border-radius: 2rem;
+    &__img-container {
         margin-bottom: 1.2rem;
+        overflow: hidden;
+        max-width: 32rem;
+
+        img {
+            width: 100%;
+            transition: 1s ease;
+    
+            &:hover {
+                scale: 1.08;
+            }
+        }
     }
+
 
     &__tech {
         font-size: 1.4rem;
         color: var(--primary);
-        font-weight: 600;
+        font-weight: 500;
     }
 
     &__name {

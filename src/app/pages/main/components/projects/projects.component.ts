@@ -14,25 +14,25 @@ export class ProjectsComponent {
 
   projectsList: Project[] = [
     {
-      url_img: 'assets/background-img.jpg',
-      name: 'Nome do projeto',
+      url_img: 'assets/projects/cardapio-online.png',
+      name: 'Cardapio Online',
       details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
       link: '',
-      technologies: 'HTML, CSS'
+      technologies: 'Angular, Typescript, SASS e Firebase'
     },
     {
-      url_img: 'assets/background-img.jpg',
-      name: 'Nome do projeto',
+      url_img: 'assets/projects/travel.png',
+      name: 'Travel Landingpage',
       details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
       link: '',
-      technologies: 'HTML, CSS'
+      technologies: 'Angular com SSR, HTML e SASS'
     },
     {
-      url_img: 'assets/background-img.jpg',
-      name: 'Nome do projeto',
+      url_img: 'assets/projects/todo.png',
+      name: 'Todo List',
       details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
       link: '',
-      technologies: 'HTML, CSS'
+      technologies: 'Angular, Typescript, HTML, SASS'
     },
     
   ];
