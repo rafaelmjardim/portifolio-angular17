@@ -83,8 +83,22 @@
     }
 
     &__link {
-        font-weight: 600;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        gap: 1.7rem;
+        transition: .4s ease;
         cursor: pointer;
+
+        &:hover {
+            gap: 1.2rem;
+            color: #bbaaa6;
+        }
+    }
+
+    &__link-icon {
+        font-size: 2.2rem;
+        color: var(--primary);
     }
 
     // &__details {

@@ -3,7 +3,7 @@
 
     <ul class="projects__list">
         @for (project of projectsList; track $index) {
-            <li class="projects__card" (click)="handleOpenDialog(project)">
+            <li class="projects__card">
                 <div class="projects__content">
                     <div class="projects__img-container">
                         <img [src]="project.url_img" [alt]="'Imagem projeto' + project.name ">
@@ -11,7 +11,11 @@
                     <span class="projects__tech">{{project.technologies}}</span>
                     <h2 class="projects__name">{{project.name}}</h2>
                     <p class="projects__details">{{project.details}}</p>
-                    <span class="projects__link">Ver projeto</span>
+
+                    <div class="projects__link" (click)="openProjectLink(project.link)">
+                        <span class="projects__link-txt">Ver projeto</span>
+                        <ng-icon class="projects__link-icon" name="ionArrowForwardOutline"></ng-icon>
+                    </div>
                 </div>
             </li>
         }
